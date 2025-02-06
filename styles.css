@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #205e4e;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+/* Contenedor de las imágenes */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.5s ease-in-out; /* Suaviza el cambio de altura */
+}
+
+/* Imágenes alineadas en columna */
+.carousel-images {
+  display: flex;
+  flex-direction: column; /* Apila las imágenes */
+  align-items: center;
+}
+
+/* Adaptar imágenes a su tamaño original */
+.carousel-images img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: none; /* Oculta todas las imágenes por defecto */
+}
+
+/* Mostrar solo la imagen activa */
+.carousel-images img.active {
+  display: block;
+}
+
+/* Botones de navegación */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Posición de los botones */
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+
+/* Fernando Ceniceros */ 
+/* 05/02/25 */ 
+/* Diseño Web */ 
+/* Universidad Autónoma de Durango*/ 
+/* Campus Alamedas */   
